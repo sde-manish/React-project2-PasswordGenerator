@@ -1,0 +1,81 @@
+body{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+#container{
+  width: 50vw;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(8, 37, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px blue;
+  position: relative;
+}
+.mini-container{
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1{
+  font-size: 35px;
+}
+#input-btn-1{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 15px;
+  color: black;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+}
+#copy-btn{
+  font-size: 20px;
+  padding: 5px 15px;
+  background-color: blue;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  
+}
+#copy-btn:active,
+#new:active{
+  background-color: rgb(0, 0, 170);
+  border-style: outset;
+}
+#copy-btn:hover,
+#new:hover{
+  box-shadow: 0 0 8px red;
+  border: none;
+}
+.mi-cont-3{
+
+  width: 80%;
+}
+#new{
+  margin-left: 5px;
+  padding: 5px 15px;
+  background-color: blue;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+#length, #numberInput, #characterInput{
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media (max-width:600px){
+  #container{
+   width: 100vw;
+  }
+} 
